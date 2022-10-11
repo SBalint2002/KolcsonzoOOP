@@ -2,18 +2,30 @@ package hu.petrik.kolcsonzooop;
 
 public class Ujsag implements Kolcsonozheto{
     private String cim;
-    private int kiadasEv;
+    private int kiadasEve;
     private int kiadasHet;
 
-    public Ujsag(String cim, int kiadasEv, int kiadasHet) {
+    public Ujsag(String cim, int kiadasEve, int kiadasHet) {
         this.cim = cim;
-        this.kiadasEv = kiadasEv;
+        this.kiadasEve = kiadasEve;
         this.kiadasHet = kiadasHet;
     }
 
+    public String getCim() {
+        return cim;
+    }
+
+    public int getKiadasEve() {
+        return kiadasEve;
+    }
+
+    public int getKiadasHet() {
+        return kiadasHet;
+    }
+
     @Override
-    public String megjelenitendoNev() {
-        return String.format("%s %d/%d", this.cim, this.kiadasEv, this.kiadasHet);
+    public String megjelenitheto() {
+        return String.format("%s %d/%d.",this.cim, this.kiadasEve, this.kiadasHet);
     }
 
     @Override

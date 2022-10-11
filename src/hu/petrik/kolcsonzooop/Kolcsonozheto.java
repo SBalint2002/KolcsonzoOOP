@@ -1,7 +1,8 @@
 package hu.petrik.kolcsonzooop;
 
 public interface Kolcsonozheto {
-    String megjelenitendoNev();
+    String megjelenitheto();
     int meddigKolcsonozheto();
-}
 
+
+}
